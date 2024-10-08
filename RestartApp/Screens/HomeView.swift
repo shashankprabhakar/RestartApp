@@ -10,27 +10,32 @@ import SwiftUI
 struct HomeView: View {
     
     @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
-
-                                       
+    
+    
     
     var body: some View {
         
-        VStack {
-        
+        VStack(spacing: 20) {
+            
+            //header
+            
+            //center
+            
+            //footer
             Text("Home")
                 .font(.largeTitle)
-        }
             
-        Button(action: {
-            isOnboardingViewActive = true
-        }) {
-            Text ("restart")
-        }
             
+            Button(action: {
+                isOnboardingViewActive = true
+            }) {
+                Text ("restart")
             }
+            
         }
-
-
+    }
+    
+}
 
 #Preview {
     ContentView()
